@@ -2,12 +2,10 @@ require('dotenv').config();
 
 console.log('TOTAL JOBS TO RUN: ' + process.env.TOTAL_JOBS );
 console.log('DURATION OF EACH JOB: ' + process.env.JOB_DURATION_MS + 'ms' );
-console.log('-----' );
+console.log('-----');
 
-var app = require('app');  // Module to control application life.
+var app = require('app');  
 
-// This method will be called when Electron has done everything
-// initialization and ready for creating browser windows.
 app.on('ready', function() {
 
   var workers = require('electron-workers')({
