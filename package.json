@@ -1,0 +1,17 @@
+{
+  "name": "electron-workers-queue-demo",
+  "version": "0.0.1",
+  "description": "demonstrate worker queuing failure",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/electron demo.js"
+  },
+  "author": "akamaozu <uzo@designbymobius.ca> (http://designbymobi.us/)",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "electron-prebuilt": "^0.28.3",
+    "electron-workers": "^1.7.0"
+  }
+}
